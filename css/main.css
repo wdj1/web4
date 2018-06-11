@@ -18,7 +18,7 @@ body {
 /* 导航条样式
 -------------------------------------------------- */
 .my-navbar {
-	padding: 15px 0;
+	padding: 1rem 0;
 	transition: background .5s ease-in-out, padding .5s ease-in-out;
   -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
   -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
@@ -58,6 +58,10 @@ body {
 /* 按钮内部的横线 */
 .icon-bar {
   border: 1px solid #dedede;
+}
+
+.slide-img {
+  /*max-height: 670px;*/
 }
 
 /* 特点概述

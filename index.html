@@ -33,32 +33,55 @@
 </head>
 <body>
 <!-- 导航条 -->
-<nav class="navbar navbar-fixed-top my-navbar">
+<nav class="navbar fixed-top navbar-expand-md navbar-dark my-navbar">
   <div class="container">
-    <!-- navbar-header -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Project Name</a>
-    </div>
-    <!-- navbar-nav -->
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#about_me">About me</a></li>
-      </ul>
-      <div class="navbar-right">
-        <button class="btn btn-success navbar-btn" id="signInButton" type="button" data-toggle="modal" data-target="#signIn">Sign in</button>
-        <button class="btn btn-info navbar-btn" id="signUpButton" type="button" data-toggle="modal" data-target="#signUp">Sign up</button>
+    <a class="navbar-brand" href="#">Eric</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#">Features</a>
+        <a class="nav-item nav-link" href="#">About me</a>
       </div>
+      <form class="form-inline my-2 my-lg-0">
+        <button class="btn btn-outline-success m-2 navbar-btn" id="signInButton" type="button" data-toggle="modal" data-target="#signIn">Sign in</button>
+        <button class="btn btn-outline-info navbar-btn" id="signUpButton" type="button" data-toggle="modal" data-target="#signUp">Sign up</button>
+        <!--<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+        <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+      </form>
     </div>
   </div>
 </nav>
+
+<!--<nav class="navbar navbar-fixed-top my-navbar">-->
+  <!--<div class="container">-->
+    <!--&lt;!&ndash; navbar-header &ndash;&gt;-->
+    <!--<div class="navbar-header">-->
+      <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">-->
+        <!--<span class="sr-only">Toggle navigation</span>-->
+        <!--<span class="icon-bar"></span>-->
+        <!--<span class="icon-bar"></span>-->
+        <!--<span class="icon-bar"></span>-->
+      <!--</button>-->
+      <!--<a class="navbar-brand" href="#">Project Name</a>-->
+    <!--</div>-->
+    <!--&lt;!&ndash; navbar-nav &ndash;&gt;-->
+    <!--<div id="navbar" class="navbar-collapse collapse">-->
+      <!--<ul class="nav navbar-nav">-->
+        <!--<li class="active"><a href="#">Home</a></li>-->
+        <!--<li><a href="#features">Features</a></li>-->
+        <!--<li><a href="#about_me">About me</a></li>-->
+      <!--</ul>-->
+      <!--<div class="navbar-right">-->
+        <!--<button class="btn btn-success navbar-btn" id="signInButton" type="button" data-toggle="modal" data-target="#signIn">Sign in</button>-->
+        <!--<button class="btn btn-info navbar-btn" id="signUpButton" type="button" data-toggle="modal" data-target="#signUp">Sign up</button>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</nav>-->
 
 <!-- 登录模态框 -->
 <div class="modal fade bs-example-modal-sm" id="signIn" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel">
@@ -138,6 +161,33 @@
       </div>
     </div>
   </div>
+</div>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100  slide-img" src="images/slide1.jpeg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 slide-img" src="images/slide2.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/slide3.jpeg" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
 
 <!-- 轮播图 -->
@@ -312,7 +362,6 @@
           <h4>广州大学华软软件学院<span class="text-muted small">（2014级-企业级数据库应用与开发）</span></h4>
           <ul class="list-group">
             <li class="list-group-item">二等奖奖学金</li>
-            <li class="list-group-item">三等奖奖学金</li>
             <li class="list-group-item">大学英语四级证书 (CET-4)</li>
             <li class="list-group-item">职协知识竞赛三等奖</li>
             <li class="list-group-item">担任职协外联部部长期间并获得最佳部长奖</li>
@@ -339,7 +388,6 @@
             <span class="label label-primary">Github 的使用</span>
           </p>
           <p>
-            <span class="label label-success">Ajax</span>
             <span class="label label-info">熟练 Photoshop</span>
             <span class="label label-warning">Fireworks 图形处理工具</span>
             <span class="label label-warning">HTTP网络协议</span>
@@ -353,7 +401,6 @@
           <h4>广州大学华软软件学院<span class="text-muted small">（2014级-企业级数据库应用与开发）</span></h4>
           <ul>
             <li>二等奖奖学金</li>
-            <li>三等奖奖学金</li>
             <li>大学英语四级证书 (CET-4)</li>
             <li>职协知识竞赛三等奖</li>
             <li>担任职协外联部部长期间并获得最佳部长奖</li>
